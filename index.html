@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="theme-color" content="#f3f5ef">
+	<meta name="description" content="Haya's beginner front-end development portfolio and practice projects.">
+	<title>Haya | Portfolio</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+	<script src="javascript.js" defer></script>
+</head>
+<body>
+	<a class="skip-link" href="#main">Skip to content</a>
+	<header class="site-header">
+		<a class="wordmark" href="#home" aria-label="Haya, home">haya<span>.</span></a>
+		<button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation">
+			<span></span><span></span>
+		</button>
+		<nav class="site-nav" id="site-nav" aria-label="Main navigation">
+			<a href="#about">About</a>
+			<a href="#projects">Projects</a>
+			<a href="#contact" class="nav-contact">Say hello <span aria-hidden="true">↗</span></a>
+			<button class="theme-toggle" type="button" aria-pressed="false" aria-label="Switch to dark mode">
+				<span class="theme-icon" aria-hidden="true">☾</span>
+				<span class="theme-label">Dark mode</span>
+			</button>
+		</nav>
+	</header>
+
+	<div class="starfield" aria-hidden="true">
+		<span>✦</span><span>✧</span><span>✦</span><span>✧</span><span>✦</span>
+		<span>✧</span><span>✦</span><span>✧</span><span>✦</span><span>✧</span>
+	</div>
+
+	<main id="main">
+		<section class="hero section-wrap" id="home" aria-labelledby="hero-title">
+			<div class="hero-copy">
+				<p class="eyebrow"><span class="status-dot"></span> LEARNING BY MAKING</p>
+				<h1 id="hero-title">Hi, I’m Haya.<br><span>I make things</span><br>for the web.</h1>
+				<p class="hero-intro">I’m learning front-end development and enjoy turning thoughtful ideas into clear, useful websites. Right now, I’m building my skills in HTML, CSS, and JavaScript.</p>
+				<div class="hero-actions">
+					<a class="button button-dark" href="#projects">Explore my work <span aria-hidden="true">↓</span></a>
+					<a class="text-link" href="#about">A little about me <span aria-hidden="true">↗</span></a>
+				</div>
+			</div>
+			<div class="hero-art" aria-label="Illustration of a web page being built">
+				<div class="art-note note-top">CURRENTLY LEARNING <span>✳</span></div>
+				<div class="browser-card">
+					<div class="browser-bar"><i></i><i></i><i></i><span>happy.html</span></div>
+					<div class="browser-content">
+						<div class="browser-nav"><b>studio<span>.</span></b><span>ABOUT&nbsp;&nbsp; WORK&nbsp;&nbsp; CONTACT</span></div>
+						<div class="browser-heading">Ideas take<br><em>shape here.</em></div>
+						<div class="browser-bottom"><span class="tiny-swatch"></span><span>Designing with curiosity<br>and a little bit of code.</span><b>↗</b></div>
+					</div>
+				</div>
+				<div class="art-note note-bottom"><span>HTML</span><span>CSS</span><span>JS</span></div>
+				<span class="orbit-star star-one" aria-hidden="true">✳</span>
+				<span class="orbit-star star-two" aria-hidden="true">✳</span>
+			</div>
+			<a class="scroll-cue" href="#about"><span></span> SCROLL TO EXPLORE</a>
+		</section>
+
+		<section class="about-section section-wrap" id="about" aria-labelledby="about-title">
+			<div class="section-label"><span>01</span> ABOUT &amp; SKILLS</div>
+			<div class="about-grid">
+				<h2 id="about-title">Curious mind.<br><span>Work in progress.</span></h2>
+				<div class="about-copy">
+					<p>I’m Jobelle Haya, 4th year student, learning one project at a time. I’m interested in accessible interfaces, thoughtful visual design, and the small details that make a site feel easy to use.</p>
+					<p>I can build and style simple pages with HTML and CSS, and I’m learning to add interaction with JavaScript. I’m still practicing responsive layouts, accessibility, and writing cleaner code, so I’m always open to feedback.</p>
+					<div class="skills-block">
+						<h3>What I’m working with</h3>
+						<ul class="skill-list" aria-label="Current skills">
+							<li>HTML <span>Learning</span></li>
+							<li>CSS <span>Learning</span></li>
+							<li>JavaScript <span>Beginner</span></li>
+							<li>Responsive design <span>Practicing</span></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="projects-section" id="projects" aria-labelledby="projects-title">
+			<div class="section-wrap">
+				<div class="section-label"><span>02</span> SELECTED PRACTICE</div>
+				<div class="projects-heading">
+					<h2 id="projects-title">Small projects,<br><span>real progress.</span></h2>
+					<p>A few projects I’ve been working on. Select an image to see it larger.</p>
+				</div>
+				<div class="project-grid">
+					<article class="project-card project-card-wide">
+						<button class="project-image-button" type="button" data-image="images/Asphalt.png" data-title="Asphalt project" aria-label="View Asphalt project image larger">
+							<img class="project-image" src="images/Asphalt.png" alt="Screenshot of the Asphalt project" loading="lazy">
+							<span class="image-hint" aria-hidden="true">VIEW IMAGE <span>↗</span></span>
+						</button>
+						<div class="project-info">
+							<div><p class="project-type">01 / PRACTICE PROJECT</p><h3>Asphalt</h3></div>
+							<p>A screenshot from our Asphalt project.</p>
+							<p class="contribution"><strong>My contribution</strong> Project design.</p>
+						</div>
+					</article>
+					<article class="project-card">
+						<button class="project-image-button" type="button" data-image="images/studentrecord.png" data-title="Student Record project" aria-label="View Student Record project image larger">
+							<img class="project-image" src="images/studentrecord.png" alt="Screenshot of the Student Record project" loading="lazy">
+							<span class="image-hint" aria-hidden="true">VIEW IMAGE <span>↗</span></span>
+						</button>
+						<div class="project-info project-info-stack">
+							<div><p class="project-type">02 / PRACTICE PROJECT</p><h3>Student Record</h3></div>
+							<p>A screenshot from our Student Record project.</p>
+							<p class="contribution"><strong>My contribution</strong> Project design.</p>
+						</div>
+					</article>
+					<article class="project-card">
+						<button class="project-image-button" type="button" data-image="images/vanrental.png" data-title="Van Rental project" aria-label="View Van Rental project image larger">
+							<img class="project-image" src="images/vanrental.png" alt="Screenshot of the Van Rental project" loading="lazy">
+							<span class="image-hint" aria-hidden="true">VIEW IMAGE <span>↗</span></span>
+						</button>
+						<div class="project-info project-info-stack">
+							<div><p class="project-type">03 / PRACTICE PROJECT</p><h3>Van Rental</h3></div>
+							<p>A screenshot from our Van Rental project. "In Figma"</p>
+							<p class="contribution"><strong>My contribution</strong> Project design.</p>
+						</div>
+					</article>
+				</div>
+				<dialog class="image-dialog" aria-label="Enlarged project image">
+					<button class="dialog-close" type="button" aria-label="Close enlarged image">×</button>
+					<img class="dialog-image" src="" alt="">
+					<p class="dialog-caption"></p>
+				</dialog>
+			</div>
+		</section>
+
+		<section class="contact-section section-wrap" id="contact" aria-labelledby="contact-title">
+			<div class="section-label"><span>03</span> CONTACT</div>
+			<div class="contact-content">
+				<p class="eyebrow">OPEN TO LEARNING &amp; CONNECTING</p>
+				<h2 id="contact-title">Let’s make<br><span>something good.</span></h2>
+				<p class="contact-note">Have a project idea, advice for a beginner, or just want to say hello? I’d love to hear from you.</p>
+				<a class="contact-email" href="mailto:elihaya01@gmail.com">elihaya01@gmail.com <span aria-hidden="true">↗</span></a>
+			</div>
+			<div class="contact-mark" aria-hidden="true">H<span>.</span></div>
+		</section>
+	</main>
+
+	<footer class="site-footer section-wrap">
+		<a class="wordmark" href="#home">haya<span>.</span></a>
+		<p>Im always here, at your call.</p>
+		<a href="#home" class="back-top">BACK TO TOP ↑</a>
+		<small>© <span id="year"></span> Haya</small>
+	</footer>
+</body>
+</html>
